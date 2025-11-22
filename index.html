@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">Hemanth Kalaiyappan</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="container hero-container">
+      <div class="hero-text" data-aos="fade-right">
+        <p class="hero-tag">Hi, I’m Hemanth Kalaiyappan</p>
+        <h1 class="hero-title">Hemanth Kalaiyappan</h1>
+        <p class="hero-subtitle">
+          A short line about you. For example: <br />
+          <strong>VLSI enthusiast • Developer • Problem Solver</strong>
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="assets/resume.pdf" class="btn outline" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo-wrapper" data-aos="fade-left">
+        <div class="hero-photo-border">
+          <img
+            src="assets/profile.jpg"
+            alt="Profile photo of Hemanth Kalaiyappan"
+            class="hero-photo"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        A quick introduction so people know who you are.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Write a 3–5 line summary here. Example:
+            I’m a pre-final year student at Sri Venkateswara College of Engineering,
+            passionate about VLSI design, digital electronics, and building cool projects.
+          </p>
+          <p>
+            I enjoy learning low-level hardware concepts, experimenting with tools like
+            Verilog/SystemVerilog, and also exploring software development and games.
+          </p>
+        </div>
+
+        <div class="about-details">
+          <ul>
+            <li><span>Location:</span> Tamil Nadu, India</li>
+            <li><span>Role:</span> Student / Aspiring VLSI Engineer</li>
+            <li><span>Interests:</span> VLSI, DFT, Games, Tech</li>
+            <li><span>Email:</span> hemanthkalaiyappan@example.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS (OPTIONAL) ================= -->
+  <section class="section" id="skills">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-subtitle">
+        You can tweak this list based on what you know.
+      </p>
+
+      <div class="chip-grid">
+        <span class="chip">Verilog</span>
+        <span class="chip">SystemVerilog</span>
+        <span class="chip">UVM</span>
+        <span class="chip">Digital Design</span>
+        <span class="chip">C / C++</span>
+        <span class="chip">Python</span>
+        <span class="chip">Git / GitHub</span>
+        <span class="chip">Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div data-aos="fade-up">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+          A grid of projects with nice hover effects.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card-inner">
+            <h3 class="project-title">RISC-V CPU Core (RTL)</h3>
+            <p class="project-description">
+              Designed and simulated a basic RISC-V CPU core with pipeline stages,
+              hazard handling, and testbenches using Verilog/SystemVerilog.
+            </p>
+            <div class="project-tags">
+              <span>Verilog</span>
+              <span>RISC-V</span>
+              <span>RTL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Report ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card-inner">
+            <h3 class="project-title">DFT Scan Chain Demo</h3>
+            <p class="project-description">
+              Implemented a simple scan-chain based DFT architecture, demonstrating
+              controllability and observability using simulation waveforms.
+            </p>
+            <div class="project-tags">
+              <span>DFT</span>
+              <span>Scan</span>
+              <span>Testbench</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">GitHub ↗</a>
+              <a href="#" target="_blank">Slides ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card-inner">
+            <h3 class="project-title">Personal Website</h3>
+            <p class="project-description">
+              This portfolio itself – built with HTML, CSS, JavaScript,
+              AOS animations, and a custom dark/light mode.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" target="_blank">Live Demo ↗</a>
+              <a href="#" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section" id="contact">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-subtitle">
+        Feel free to reach out for collaboration, internships, or just to say hi!
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <a href="mailto:hemanthkalaiyappan@example.com">hemanthkalaiyappan@example.com</a>
+        </div>
+        <div class="contact-item">
+          <h3>GitHub</h3>
+          <a href="https://github.com/Darokcamper" target="_blank">
+            github.com/Darokcamper
+          </a>
+        </div>
+        <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/HemanthKalaiyappan" target="_blank">
+            linkedin.com/in/HemanthKalaiyappan
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© <span id="year"></span> Hemanth Kalaiyappan. All rights reserved.</p>
+      <p class="footer-built">Built with ❤️ using HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
